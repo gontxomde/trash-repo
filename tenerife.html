@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0f42f77bac48dec68b8bbcd802401efa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0f42f77bac48dec68b8bbcd802401efa" ></div>
+        
+</body>
+<script>    
+    
+            var map_0f42f77bac48dec68b8bbcd802401efa = L.map(
+                "map_0f42f77bac48dec68b8bbcd802401efa",
+                {
+                    center: [28.31, -16.5467],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    tooltip: "Hello",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_536d5fc4bdfd552946488b8423dec366 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+            var mouse_position_8431a588ef4b8cd13d8cb993140d977c = new L.Control.MousePosition(
+                {"emptyString": "Unavailable", "lngFirst": false, "numDigits": 5, "position": "bottomright", "prefix": "", "separator": " : "}
+            );
+            mouse_position_8431a588ef4b8cd13d8cb993140d977c.options["latFormatter"] =
+                undefined;
+            mouse_position_8431a588ef4b8cd13d8cb993140d977c.options["lngFormatter"] =
+                undefined;
+            map_0f42f77bac48dec68b8bbcd802401efa.addControl(mouse_position_8431a588ef4b8cd13d8cb993140d977c);
+        
+    
+            var marker_ecdee90590d04b731f9365342bfab68f = L.marker(
+                [28.27233, -16.6425],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_9a0e69c9075e1a3b5c3ca7364435c433 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/mountain_26f0-fe0f.png"});
+        marker_ecdee90590d04b731f9365342bfab68f.setIcon(custom_icon_9a0e69c9075e1a3b5c3ca7364435c433);
+        
+    
+        var popup_4515d41c14266ed09273fa7e4b527f40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d6faed1c55bcf584d54d396cc9e4e44 = $(`<div id="html_7d6faed1c55bcf584d54d396cc9e4e44" style="width: 100.0%; height: 100.0%;">Teide</div>`)[0];
+            popup_4515d41c14266ed09273fa7e4b527f40.setContent(html_7d6faed1c55bcf584d54d396cc9e4e44);
+        
+
+        marker_ecdee90590d04b731f9365342bfab68f.bindPopup(popup_4515d41c14266ed09273fa7e4b527f40)
+        ;
+
+        
+    
+    
+            marker_ecdee90590d04b731f9365342bfab68f.bindTooltip(
+                `<div>
+                     Teide
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64b2824dccf614c6352cf0bcf45cc2aa = L.marker(
+                [28.12646083435298, -16.72367325798542],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_bf9f4ac2ba00680f664ae5111cd14094 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/mountain_26f0-fe0f.png"});
+        marker_64b2824dccf614c6352cf0bcf45cc2aa.setIcon(custom_icon_bf9f4ac2ba00680f664ae5111cd14094);
+        
+    
+        var popup_65efd495a85d386e5a6b3c55b92f4928 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e48d39302addc4ce0fcbaed9217af36 = $(`<div id="html_0e48d39302addc4ce0fcbaed9217af36" style="width: 100.0%; height: 100.0%;">Barranco del infierno</div>`)[0];
+            popup_65efd495a85d386e5a6b3c55b92f4928.setContent(html_0e48d39302addc4ce0fcbaed9217af36);
+        
+
+        marker_64b2824dccf614c6352cf0bcf45cc2aa.bindPopup(popup_65efd495a85d386e5a6b3c55b92f4928)
+        ;
+
+        
+    
+    
+            marker_64b2824dccf614c6352cf0bcf45cc2aa.bindTooltip(
+                `<div>
+                     Barranco del infierno
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01461cc8ec90963d9fb1f7e4400e92da = L.marker(
+                [28.366869099529993, -16.72220871565133],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_92d3299d4c230fc465bbf04cccef8814 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/deciduous-tree_1f333.png"});
+        marker_01461cc8ec90963d9fb1f7e4400e92da.setIcon(custom_icon_92d3299d4c230fc465bbf04cccef8814);
+        
+    
+        var popup_29210cf22a40c06c89bd2bc02086d8f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33d5e3d55669c61b3177031cde892433 = $(`<div id="html_33d5e3d55669c61b3177031cde892433" style="width: 100.0%; height: 100.0%;">Drago Milenario</div>`)[0];
+            popup_29210cf22a40c06c89bd2bc02086d8f8.setContent(html_33d5e3d55669c61b3177031cde892433);
+        
+
+        marker_01461cc8ec90963d9fb1f7e4400e92da.bindPopup(popup_29210cf22a40c06c89bd2bc02086d8f8)
+        ;
+
+        
+    
+    
+            marker_01461cc8ec90963d9fb1f7e4400e92da.bindTooltip(
+                `<div>
+                     Drago Milenario
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3578dca5172fdbc657c67e2b711f14d6 = L.marker(
+                [28.35215371057106, -16.703979630992343],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_e62567a4dab28e6121bed3019fbc578a = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/mountain_26f0-fe0f.png"});
+        marker_3578dca5172fdbc657c67e2b711f14d6.setIcon(custom_icon_e62567a4dab28e6121bed3019fbc578a);
+        
+    
+        var popup_636f18a7965234269e6b3b7bc6bf9700 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_767fe3f5f89ecaad0bbbc4f8b5880759 = $(`<div id="html_767fe3f5f89ecaad0bbbc4f8b5880759" style="width: 100.0%; height: 100.0%;">Cueva del Viento</div>`)[0];
+            popup_636f18a7965234269e6b3b7bc6bf9700.setContent(html_767fe3f5f89ecaad0bbbc4f8b5880759);
+        
+
+        marker_3578dca5172fdbc657c67e2b711f14d6.bindPopup(popup_636f18a7965234269e6b3b7bc6bf9700)
+        ;
+
+        
+    
+    
+            marker_3578dca5172fdbc657c67e2b711f14d6.bindTooltip(
+                `<div>
+                     Cueva del Viento
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_422caf44acf821cec481ea0d91690e5a = L.marker(
+                [28.241191554161656, -16.837989310845213],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_d4ab87975180e423db4dea06509c9cc1 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/mountain_26f0-fe0f.png"});
+        marker_422caf44acf821cec481ea0d91690e5a.setIcon(custom_icon_d4ab87975180e423db4dea06509c9cc1);
+        
+    
+        var popup_54fc1fae672858884a2721f78dc0c30e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18daa72c374fc1d30e08d4dd67fb924f = $(`<div id="html_18daa72c374fc1d30e08d4dd67fb924f" style="width: 100.0%; height: 100.0%;">Los Gigantes</div>`)[0];
+            popup_54fc1fae672858884a2721f78dc0c30e.setContent(html_18daa72c374fc1d30e08d4dd67fb924f);
+        
+
+        marker_422caf44acf821cec481ea0d91690e5a.bindPopup(popup_54fc1fae672858884a2721f78dc0c30e)
+        ;
+
+        
+    
+    
+            marker_422caf44acf821cec481ea0d91690e5a.bindTooltip(
+                `<div>
+                     Los Gigantes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7206d2adffb6e112338af6a90c3245b = L.marker(
+                [28.536536617338488, -16.239216124345067],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_9fac0332111f7a243f9285ccb84755be = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/mountain_26f0-fe0f.png"});
+        marker_e7206d2adffb6e112338af6a90c3245b.setIcon(custom_icon_9fac0332111f7a243f9285ccb84755be);
+        
+    
+        var popup_915548eea4314d2c0ae3a569cc4ed1f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e53dff0aef32d5e7e490c43e37cff4a = $(`<div id="html_0e53dff0aef32d5e7e490c43e37cff4a" style="width: 100.0%; height: 100.0%;">PR de Anaga</div>`)[0];
+            popup_915548eea4314d2c0ae3a569cc4ed1f6.setContent(html_0e53dff0aef32d5e7e490c43e37cff4a);
+        
+
+        marker_e7206d2adffb6e112338af6a90c3245b.bindPopup(popup_915548eea4314d2c0ae3a569cc4ed1f6)
+        ;
+
+        
+    
+    
+            marker_e7206d2adffb6e112338af6a90c3245b.bindTooltip(
+                `<div>
+                     PR de Anaga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84483ebec028b8268f896e85b8ce5a76 = L.marker(
+                [28.320946007540453, -16.413634584970712],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_92288aa67e5b30fdf2890ed273069e81 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/mountain_26f0-fe0f.png"});
+        marker_84483ebec028b8268f896e85b8ce5a76.setIcon(custom_icon_92288aa67e5b30fdf2890ed273069e81);
+        
+    
+        var popup_3fc7817f7082d13050c69d5866cf626d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdff6825ebbc532db88b39244dc724b9 = $(`<div id="html_cdff6825ebbc532db88b39244dc724b9" style="width: 100.0%; height: 100.0%;">Piramides de Güimar</div>`)[0];
+            popup_3fc7817f7082d13050c69d5866cf626d.setContent(html_cdff6825ebbc532db88b39244dc724b9);
+        
+
+        marker_84483ebec028b8268f896e85b8ce5a76.bindPopup(popup_3fc7817f7082d13050c69d5866cf626d)
+        ;
+
+        
+    
+    
+            marker_84483ebec028b8268f896e85b8ce5a76.bindTooltip(
+                `<div>
+                     Piramides de Güimar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2dccb6ec27659403700affc3f53732d4 = L.marker(
+                [28.408527693312287, -16.564695444485753],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_2bcf82bc8f05021d9bc0665a5cc68826 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/parrot_1f99c.png"});
+        marker_2dccb6ec27659403700affc3f53732d4.setIcon(custom_icon_2bcf82bc8f05021d9bc0665a5cc68826);
+        
+    
+        var popup_8710ad51d12160af009150f626e3a869 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95f747ec9f9f626e8b76919cefed3ae7 = $(`<div id="html_95f747ec9f9f626e8b76919cefed3ae7" style="width: 100.0%; height: 100.0%;">Loro parque</div>`)[0];
+            popup_8710ad51d12160af009150f626e3a869.setContent(html_95f747ec9f9f626e8b76919cefed3ae7);
+        
+
+        marker_2dccb6ec27659403700affc3f53732d4.bindPopup(popup_8710ad51d12160af009150f626e3a869)
+        ;
+
+        
+    
+    
+            marker_2dccb6ec27659403700affc3f53732d4.bindTooltip(
+                `<div>
+                     Loro parque
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00c0cc62dccf3d551976799cec0a9957 = L.marker(
+                [28.466719775389194, -16.252346109222287],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_da7a226b935c557e3f120a789fee0785 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/houses_1f3d8-fe0f.png"});
+        marker_00c0cc62dccf3d551976799cec0a9957.setIcon(custom_icon_da7a226b935c557e3f120a789fee0785);
+        
+    
+        var popup_af91dd21864248af29f2fcb3b9d28035 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cecaaf35cf0621c0234e0f9b52bb0711 = $(`<div id="html_cecaaf35cf0621c0234e0f9b52bb0711" style="width: 100.0%; height: 100.0%;">SC de Tenerife</div>`)[0];
+            popup_af91dd21864248af29f2fcb3b9d28035.setContent(html_cecaaf35cf0621c0234e0f9b52bb0711);
+        
+
+        marker_00c0cc62dccf3d551976799cec0a9957.bindPopup(popup_af91dd21864248af29f2fcb3b9d28035)
+        ;
+
+        
+    
+    
+            marker_00c0cc62dccf3d551976799cec0a9957.bindTooltip(
+                `<div>
+                     SC de Tenerife
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11409c1cbe45a4413e02ae4914a8b181 = L.marker(
+                [28.41226353865709, -16.545257997127155],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_8217d245ca04249943d502612f68d821 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/houses_1f3d8-fe0f.png"});
+        marker_11409c1cbe45a4413e02ae4914a8b181.setIcon(custom_icon_8217d245ca04249943d502612f68d821);
+        
+    
+        var popup_4992f69467fa188de1cd70017c4fd046 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fec445eb1e597df1e3d223b4b1c2456a = $(`<div id="html_fec445eb1e597df1e3d223b4b1c2456a" style="width: 100.0%; height: 100.0%;">Puerto de la Cruz</div>`)[0];
+            popup_4992f69467fa188de1cd70017c4fd046.setContent(html_fec445eb1e597df1e3d223b4b1c2456a);
+        
+
+        marker_11409c1cbe45a4413e02ae4914a8b181.bindPopup(popup_4992f69467fa188de1cd70017c4fd046)
+        ;
+
+        
+    
+    
+            marker_11409c1cbe45a4413e02ae4914a8b181.bindTooltip(
+                `<div>
+                     Puerto de la Cruz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad4bc77589b42053322d965527afa998 = L.marker(
+                [28.488427060244994, -16.316338544102397],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_ef009aff1d1b6ec3d4561d86657eecd6 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/houses_1f3d8-fe0f.png"});
+        marker_ad4bc77589b42053322d965527afa998.setIcon(custom_icon_ef009aff1d1b6ec3d4561d86657eecd6);
+        
+    
+        var popup_395b0f02c0bc1a6a05df2a9be04e7ce2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c33dd95a7f8a155e0d0527c1467e9e1c = $(`<div id="html_c33dd95a7f8a155e0d0527c1467e9e1c" style="width: 100.0%; height: 100.0%;">San Cristobal de la Laguna</div>`)[0];
+            popup_395b0f02c0bc1a6a05df2a9be04e7ce2.setContent(html_c33dd95a7f8a155e0d0527c1467e9e1c);
+        
+
+        marker_ad4bc77589b42053322d965527afa998.bindPopup(popup_395b0f02c0bc1a6a05df2a9be04e7ce2)
+        ;
+
+        
+    
+    
+            marker_ad4bc77589b42053322d965527afa998.bindTooltip(
+                `<div>
+                     San Cristobal de la Laguna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93a21bf664f8380b5cdaa3e32df1efeb = L.marker(
+                [28.051169829161168, -16.71852830058559],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_98d1b0c0fdbc71b85f190e50630f4711 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/houses_1f3d8-fe0f.png"});
+        marker_93a21bf664f8380b5cdaa3e32df1efeb.setIcon(custom_icon_98d1b0c0fdbc71b85f190e50630f4711);
+        
+    
+        var popup_7666ab0c83c19d293008cf3d8152219a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2a15c7453727f0aeedda08297d163d3 = $(`<div id="html_d2a15c7453727f0aeedda08297d163d3" style="width: 100.0%; height: 100.0%;">Los Cristianos</div>`)[0];
+            popup_7666ab0c83c19d293008cf3d8152219a.setContent(html_d2a15c7453727f0aeedda08297d163d3);
+        
+
+        marker_93a21bf664f8380b5cdaa3e32df1efeb.bindPopup(popup_7666ab0c83c19d293008cf3d8152219a)
+        ;
+
+        
+    
+    
+            marker_93a21bf664f8380b5cdaa3e32df1efeb.bindTooltip(
+                `<div>
+                     Los Cristianos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_483da38c20541bcc140e6dfeda0124a5 = L.marker(
+                [28.389979204951036, -16.52515211666879],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_bb6161493f34cfa36f7b9cb153e0e859 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/houses_1f3d8-fe0f.png"});
+        marker_483da38c20541bcc140e6dfeda0124a5.setIcon(custom_icon_bb6161493f34cfa36f7b9cb153e0e859);
+        
+    
+        var popup_0c3430d5ce1c0b05f18badbc1e9aab6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_504588a62e9e405830054318e38b0056 = $(`<div id="html_504588a62e9e405830054318e38b0056" style="width: 100.0%; height: 100.0%;">La Orotava</div>`)[0];
+            popup_0c3430d5ce1c0b05f18badbc1e9aab6d.setContent(html_504588a62e9e405830054318e38b0056);
+        
+
+        marker_483da38c20541bcc140e6dfeda0124a5.bindPopup(popup_0c3430d5ce1c0b05f18badbc1e9aab6d)
+        ;
+
+        
+    
+    
+            marker_483da38c20541bcc140e6dfeda0124a5.bindTooltip(
+                `<div>
+                     La Orotava
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aefa19575e58ddba099bf9a3677da919 = L.marker(
+                [28.07834307846652, -16.732706547647044],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_8b5caa92ceb9e3e3e0a6549d718aae45 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/houses_1f3d8-fe0f.png"});
+        marker_aefa19575e58ddba099bf9a3677da919.setIcon(custom_icon_8b5caa92ceb9e3e3e0a6549d718aae45);
+        
+    
+        var popup_70dac3daffff45bfee1cbfae55c97af8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62d426e40b76fad50c82e3c222e67de2 = $(`<div id="html_62d426e40b76fad50c82e3c222e67de2" style="width: 100.0%; height: 100.0%;">Costa Adeje</div>`)[0];
+            popup_70dac3daffff45bfee1cbfae55c97af8.setContent(html_62d426e40b76fad50c82e3c222e67de2);
+        
+
+        marker_aefa19575e58ddba099bf9a3677da919.bindPopup(popup_70dac3daffff45bfee1cbfae55c97af8)
+        ;
+
+        
+    
+    
+            marker_aefa19575e58ddba099bf9a3677da919.bindTooltip(
+                `<div>
+                     Costa Adeje
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d10cfed31eddb7ce83a86cde586525b = L.marker(
+                [28.367502780450984, -16.713629717649972],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_c90728f430cce79b8763bff7f2ba1165 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/houses_1f3d8-fe0f.png"});
+        marker_3d10cfed31eddb7ce83a86cde586525b.setIcon(custom_icon_c90728f430cce79b8763bff7f2ba1165);
+        
+    
+        var popup_0db1986db6e0ee6c6402d35cbcbb4297 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bce1d2153a17892a1fb124b8cba69d85 = $(`<div id="html_bce1d2153a17892a1fb124b8cba69d85" style="width: 100.0%; height: 100.0%;">Icod de los Vinos</div>`)[0];
+            popup_0db1986db6e0ee6c6402d35cbcbb4297.setContent(html_bce1d2153a17892a1fb124b8cba69d85);
+        
+
+        marker_3d10cfed31eddb7ce83a86cde586525b.bindPopup(popup_0db1986db6e0ee6c6402d35cbcbb4297)
+        ;
+
+        
+    
+    
+            marker_3d10cfed31eddb7ce83a86cde586525b.bindTooltip(
+                `<div>
+                     Icod de los Vinos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e493a300c412a5fcc0bfc319cf746926 = L.marker(
+                [28.043058274076326, -16.534324531196667],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_a75e865da6e3bae6d9f25876328b45dc = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/beach-with-umbrella_1f3d6-fe0f.png"});
+        marker_e493a300c412a5fcc0bfc319cf746926.setIcon(custom_icon_a75e865da6e3bae6d9f25876328b45dc);
+        
+    
+        var popup_b6fbfa14854c5c18f5993f721bf334a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5361add4e01d72581c7bf43686b1eb2 = $(`<div id="html_b5361add4e01d72581c7bf43686b1eb2" style="width: 100.0%; height: 100.0%;">El Médano</div>`)[0];
+            popup_b6fbfa14854c5c18f5993f721bf334a0.setContent(html_b5361add4e01d72581c7bf43686b1eb2);
+        
+
+        marker_e493a300c412a5fcc0bfc319cf746926.bindPopup(popup_b6fbfa14854c5c18f5993f721bf334a0)
+        ;
+
+        
+    
+    
+            marker_e493a300c412a5fcc0bfc319cf746926.bindTooltip(
+                `<div>
+                     El Médano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d8ad5c2856fd7e44847dfb12e14eba4 = L.marker(
+                [28.386179852763778, -16.583867514759053],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_9da9fad7de7d31f5e7add63d6ffe41ae = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/beach-with-umbrella_1f3d6-fe0f.png"});
+        marker_0d8ad5c2856fd7e44847dfb12e14eba4.setIcon(custom_icon_9da9fad7de7d31f5e7add63d6ffe41ae);
+        
+    
+        var popup_fc03377c603c53771fdbc04d850c98fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d39f1aa6d5d9c4ee8676bec15f3bded = $(`<div id="html_6d39f1aa6d5d9c4ee8676bec15f3bded" style="width: 100.0%; height: 100.0%;">Los Realejos</div>`)[0];
+            popup_fc03377c603c53771fdbc04d850c98fc.setContent(html_6d39f1aa6d5d9c4ee8676bec15f3bded);
+        
+
+        marker_0d8ad5c2856fd7e44847dfb12e14eba4.bindPopup(popup_fc03377c603c53771fdbc04d850c98fc)
+        ;
+
+        
+    
+    
+            marker_0d8ad5c2856fd7e44847dfb12e14eba4.bindTooltip(
+                `<div>
+                     Los Realejos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55e95de0c0864b358ea8becb49427d5a = L.marker(
+                [28.06288072479546, -16.733987282939793],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_4dfa16fa86659e1db1ce5a90e1f41a49 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/beach-with-umbrella_1f3d6-fe0f.png"});
+        marker_55e95de0c0864b358ea8becb49427d5a.setIcon(custom_icon_4dfa16fa86659e1db1ce5a90e1f41a49);
+        
+    
+        var popup_ce54099da3afdd5ad9c77bc5b6858aec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d434bb0aa61c35b83556117c7779777 = $(`<div id="html_0d434bb0aa61c35b83556117c7779777" style="width: 100.0%; height: 100.0%;">Las Américas</div>`)[0];
+            popup_ce54099da3afdd5ad9c77bc5b6858aec.setContent(html_0d434bb0aa61c35b83556117c7779777);
+        
+
+        marker_55e95de0c0864b358ea8becb49427d5a.bindPopup(popup_ce54099da3afdd5ad9c77bc5b6858aec)
+        ;
+
+        
+    
+    
+            marker_55e95de0c0864b358ea8becb49427d5a.bindTooltip(
+                `<div>
+                     Las Américas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d671af3848fb13e7a40925870566684e = L.marker(
+                [28.5084122343571, -16.1863918231671],
+                {}
+            ).addTo(map_0f42f77bac48dec68b8bbcd802401efa);
+        
+    
+        var custom_icon_45e339219605e6421fec2733b6ea7746 = L.icon({"iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/beach-with-umbrella_1f3d6-fe0f.png"});
+        marker_d671af3848fb13e7a40925870566684e.setIcon(custom_icon_45e339219605e6421fec2733b6ea7746);
+        
+    
+        var popup_bf4cc1d7814c37afde8a9a1934cb1104 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07771cd3ac8da0cc00ca3d637369bc5a = $(`<div id="html_07771cd3ac8da0cc00ca3d637369bc5a" style="width: 100.0%; height: 100.0%;">Las Teresitas</div>`)[0];
+            popup_bf4cc1d7814c37afde8a9a1934cb1104.setContent(html_07771cd3ac8da0cc00ca3d637369bc5a);
+        
+
+        marker_d671af3848fb13e7a40925870566684e.bindPopup(popup_bf4cc1d7814c37afde8a9a1934cb1104)
+        ;
+
+        
+    
+    
+            marker_d671af3848fb13e7a40925870566684e.bindTooltip(
+                `<div>
+                     Las Teresitas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
